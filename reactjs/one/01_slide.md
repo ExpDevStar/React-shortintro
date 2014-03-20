@@ -24,6 +24,8 @@ color: #F30C0C;
 </style>
 !SLIDE
 # React JS #
+## (Yet another) Javascript UI Framework ##
+## by: Facebook, Instagram ##
 
 !SLIDE bullets incremental
 # Current Scenario #
@@ -55,7 +57,7 @@ color: #F30C0C;
 !SLIDE bullets incremental
 # React JS #
 * Give it 5 minutes
-* Templates => Components
+* _Components_ not Templates
 
 
 
@@ -96,7 +98,7 @@ color: #F30C0C;
       React.renderComponent(<Link text='Home' />, document.body);
 
 !SLIDE
-# Creating Components #
+# jsx compiles to... #
     @@@ javascript
       Link = React.createClass({
         render: function(){
@@ -110,8 +112,28 @@ color: #F30C0C;
       React.renderComponent(Link({text: 'Home'}), document.body);
 
 !SLIDE bullets incremental
-# Re-render Everything #
-* Re-render entire app with every state change
+# REACT KEY CONCEPTS #
+* Re-render entire app with every single update
 * Just like the good old days (90's)
+
+!SLIDE bullets incremental
+# REACT KEY CONCEPTS #
+## Virtual DOM ##
+* In-memory data structure
+* Optimized for performance and memory usage
+
+!SLIDE bullets incremental
+# ON EVERY UPDATE... #
+* Build new Virtual DOM tree
+* Diff with old one
+* Compute minimal set of changes
+* Batch render all changes to browser
+
+!SLIDE bullets incremental
+# REACT KEY CONCEPTS #
+## Synthetic Events ##
+* A cross-browser wrapper around the browser's native events
+* Handles mouse, keyboard, touch events
+
 
 
