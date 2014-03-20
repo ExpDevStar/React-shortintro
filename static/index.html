@@ -98,6 +98,16 @@
 .content {
   color: black;
 }
+.slide{
+background: rgb(254,255,255);
+background: -moz-linear-gradient(-45deg,  rgba(254,255,255,1) 0%, rgba(210,235,249,1) 100%);
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(254,255,255,1)), color-stop(100%,rgba(210,235,249,1)));
+background: -webkit-linear-gradient(-45deg,  rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%);
+background: -o-linear-gradient(-45deg,  rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%);
+background: -ms-linear-gradient(-45deg,  rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%);
+background: linear-gradient(135deg,  rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#d2ebf9',GradientType=1 );
+}
 h1, h2 {
   color: rgb(79, 180, 226);
 }
@@ -123,7 +133,7 @@ color: #F30C0C;
 
 <h2>(Yet another) Javascript UI Framework</h2>
 
-<h2>by: Facebook, Instagram</h2></div>
+<h2>from: Facebook, Instagram</h2></div>
 </div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/3">
 <h1>Current Scenario</h1></div>
 </div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/4">
@@ -153,10 +163,17 @@ color: #F30C0C;
 <li><del>routing</del></li>
 </ul></div>
 </div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/7">
+<h1>React JS</h1>
+
+<ul>
+<li>M<em>V</em>C</li>
+<li>The <em>V</em> of MVC</li>
+</ul></div>
+</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/8">
 <h1>View frameworks</h1>
 
 <p><img src="./file/./reactjs/one/../images/frameworks.png" width="580" height="284" alt="alt text"/></p></div>
-</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/8">
+</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/9">
 <h1>React JS</h1>
 
 <ul>
@@ -164,17 +181,17 @@ color: #F30C0C;
 <li>
 <em>Components</em> not Templates</li>
 </ul></div>
-</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/9">
+</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/10">
 <h1>Components</h1>
 
 <ul>
 <li>Separate your concerns</li>
 </ul></div>
-</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/10">
+</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/11">
 <h1>Components</h1>
 
 <p><img src="./file/./reactjs/one/../images/issue.png" width="947" height="515" alt="alt text"/></p></div>
-</div><div id="./reactjs/one/01_slide" class="slide " data-transition="none"><div class="content " ref="./reactjs/one/01_slide/11">
+</div><div id="./reactjs/one/01_slide" class="slide " data-transition="none"><div class="content " ref="./reactjs/one/01_slide/12">
 <h1>Creating Components</h1>
 
 <pre class="sh_javascript"><code>  Link = React.createClass({
@@ -187,7 +204,7 @@ color: #F30C0C;
   })
 
   React.renderComponent(Link({text: 'Home'}), document.body);</code></pre></div>
-</div><div id="./reactjs/one/01_slide" class="slide " data-transition="none"><div class="content " ref="./reactjs/one/01_slide/12">
+</div><div id="./reactjs/one/01_slide" class="slide " data-transition="none"><div class="content " ref="./reactjs/one/01_slide/13">
 <h1>Creating Components</h1>
 
 <h1>jsx</h1>
@@ -201,7 +218,7 @@ color: #F30C0C;
   })
 
   React.renderComponent(&lt;Link text='Home' /&gt;, document.body);</code></pre></div>
-</div><div id="./reactjs/one/01_slide" class="slide " data-transition="none"><div class="content " ref="./reactjs/one/01_slide/13">
+</div><div id="./reactjs/one/01_slide" class="slide " data-transition="none"><div class="content " ref="./reactjs/one/01_slide/14">
 <h1>jsx compiles to...</h1>
 
 <pre class="sh_javascript"><code>  Link = React.createClass({
@@ -214,14 +231,14 @@ color: #F30C0C;
   })
 
   React.renderComponent(Link({text: 'Home'}), document.body);</code></pre></div>
-</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/14">
+</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/15">
 <h1>REACT KEY CONCEPTS</h1>
 
 <ul>
 <li>Re-render entire app with every single update</li>
 <li>Just like the good old days (90's)</li>
 </ul></div>
-</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/15">
+</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/16">
 <h1>REACT KEY CONCEPTS</h1>
 
 <h2>Virtual DOM</h2>
@@ -230,7 +247,7 @@ color: #F30C0C;
 <li>In-memory data structure</li>
 <li>Optimized for performance and memory usage</li>
 </ul></div>
-</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/16">
+</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/17">
 <h1>ON EVERY UPDATE...</h1>
 
 <ul>
@@ -239,7 +256,7 @@ color: #F30C0C;
 <li>Compute minimal set of changes</li>
 <li>Batch render all changes to browser</li>
 </ul></div>
-</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/17">
+</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/18">
 <h1>REACT KEY CONCEPTS</h1>
 
 <h2>Synthetic Events</h2>
@@ -247,6 +264,25 @@ color: #F30C0C;
 <ul>
 <li>A cross-browser wrapper around the browser's native events</li>
 <li>Handles mouse, keyboard, touch events</li>
+</ul></div>
+</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/19">
+<h1>REACT KEY CONCEPTS</h1>
+
+<h2>Stack agnostic</h2>
+
+<ul>
+<li>28kb</li>
+<li>any MVC framework of choice</li>
+<li>jQuery</li>
+</ul></div>
+</div><div id="./reactjs/one/01_slide" class="slide " data-transition="none"><div class="content " ref="./reactjs/one/01_slide/20">
+<h1>Thank you!</h1>
+
+<ul>
+<li>Girish Sonawane</li>
+<li>@girishso</li>
+<li>girish@cuberoot.in</li>
+<li><a href="http://jsbin.com/guzux/3/edit">Demo</a></li>
 </ul></div>
 </div></div>
 <div id="pauseScreen">
