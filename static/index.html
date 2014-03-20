@@ -119,7 +119,11 @@ color: #F30C0C;
 }
 </style></div>
 </div><div id="./reactjs/one/01_slide" class="slide " data-transition="none"><div class="content " ref="./reactjs/one/01_slide/2">
-<h1>React JS</h1></div>
+<h1>React JS</h1>
+
+<h2>(Yet another) Javascript UI Framework</h2>
+
+<h2>by: Facebook, Instagram</h2></div>
 </div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/3">
 <h1>Current Scenario</h1></div>
 </div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/4">
@@ -157,7 +161,8 @@ color: #F30C0C;
 
 <ul>
 <li>Give it 5 minutes</li>
-<li>Templates =&gt; Components</li>
+<li>
+<em>Components</em> not Templates</li>
 </ul></div>
 </div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/9">
 <h1>Components</h1>
@@ -197,7 +202,7 @@ color: #F30C0C;
 
   React.renderComponent(&lt;Link text='Home' /&gt;, document.body);</code></pre></div>
 </div><div id="./reactjs/one/01_slide" class="slide " data-transition="none"><div class="content " ref="./reactjs/one/01_slide/13">
-<h1>Creating Components</h1>
+<h1>jsx compiles to...</h1>
 
 <pre class="sh_javascript"><code>  Link = React.createClass({
     render: function(){
@@ -210,11 +215,38 @@ color: #F30C0C;
 
   React.renderComponent(Link({text: 'Home'}), document.body);</code></pre></div>
 </div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/14">
-<h1>Re-render Everything</h1>
+<h1>REACT KEY CONCEPTS</h1>
 
 <ul>
-<li>Re-render entire app with every state change</li>
+<li>Re-render entire app with every single update</li>
 <li>Just like the good old days (90's)</li>
+</ul></div>
+</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/15">
+<h1>REACT KEY CONCEPTS</h1>
+
+<h2>Virtual DOM</h2>
+
+<ul>
+<li>In-memory data structure</li>
+<li>Optimized for performance and memory usage</li>
+</ul></div>
+</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/16">
+<h1>ON EVERY UPDATE...</h1>
+
+<ul>
+<li>Build new Virtual DOM tree</li>
+<li>Diff with old one</li>
+<li>Compute minimal set of changes</li>
+<li>Batch render all changes to browser</li>
+</ul></div>
+</div><div id="./reactjs/one/01_slide" class="slide bullets incremental" data-transition="none"><div class="content bullets incremental" ref="./reactjs/one/01_slide/17">
+<h1>REACT KEY CONCEPTS</h1>
+
+<h2>Synthetic Events</h2>
+
+<ul>
+<li>A cross-browser wrapper around the browser's native events</li>
+<li>Handles mouse, keyboard, touch events</li>
 </ul></div>
 </div></div>
 <div id="pauseScreen">

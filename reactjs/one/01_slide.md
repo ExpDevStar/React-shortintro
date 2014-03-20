@@ -2,6 +2,16 @@
 .content {
   color: black;
 }
+.slide{
+background: rgb(254,255,255);
+background: -moz-linear-gradient(-45deg,  rgba(254,255,255,1) 0%, rgba(210,235,249,1) 100%);
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(254,255,255,1)), color-stop(100%,rgba(210,235,249,1)));
+background: -webkit-linear-gradient(-45deg,  rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%);
+background: -o-linear-gradient(-45deg,  rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%);
+background: -ms-linear-gradient(-45deg,  rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%);
+background: linear-gradient(135deg,  rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#d2ebf9',GradientType=1 );
+}
 h1, h2 {
   color: rgb(79, 180, 226);
 }
@@ -25,7 +35,7 @@ color: #F30C0C;
 !SLIDE
 # React JS #
 ## (Yet another) Javascript UI Framework ##
-## by: Facebook, Instagram ##
+## from: Facebook, Instagram ##
 
 !SLIDE bullets incremental
 # Current Scenario #
@@ -47,6 +57,12 @@ color: #F30C0C;
 * <del>controllers</del>
 * <del>bindings</del>
 * <del>routing</del>
+
+
+!SLIDE bullets incremental
+# React JS #
+* M_V_C
+* The _V_ of MVC
 
 
 !SLIDE bullets incremental
@@ -136,4 +152,17 @@ color: #F30C0C;
 * Handles mouse, keyboard, touch events
 
 
+!SLIDE bullets incremental
+# REACT KEY CONCEPTS #
+## Stack agnostic ##
+* 28kb
+* any MVC framework of choice
+* jQuery
+
+!SLIDE
+# Thank you! #
+* Girish Sonawane
+* @girishso
+* girish@cuberoot.in
+* [Demo](http://jsbin.com/guzux/3/edit)
 
