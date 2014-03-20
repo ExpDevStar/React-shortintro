@@ -32,10 +32,14 @@ em {color: #a00;}
 color: #F30C0C;
 }
 </style>
-!SLIDE
+!SLIDE bullets
 # React JS #
 ## (Yet another) Javascript UI Framework ##
-## from: Facebook, Instagram ##
+## created by: Facebook, Instagram ##
+
+* Girish Sonawane
+* @girishso
+* www.cuberoot.in
 
 !SLIDE bullets incremental
 # Current Scenario #
@@ -161,8 +165,5 @@ color: #F30C0C;
 
 !SLIDE
 # Thank you! #
-* Girish Sonawane
-* @girishso
-* girish@cuberoot.in
 * [Demo](http://jsbin.com/guzux/3/edit)
 
